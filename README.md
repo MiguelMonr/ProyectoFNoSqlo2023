@@ -90,15 +90,4 @@ query = "SELECT * FROM movie_data WHERE release_date >= '2020-01-01' AND release
 result = session.execute(query)
   ```
 
-Queries en Neo4j 
- ```bash
 
-  ```
-
- ```bash
-
-  ```
-
- ```bash
-
-  ```
