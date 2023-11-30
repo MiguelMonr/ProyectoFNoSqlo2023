@@ -73,15 +73,21 @@ db.claves3.aggregate([
 
 Queries en Cassandra 
  ```bash
-
+genre_id = 5 
+query = "SELECT * FROM movie_data WHERE genre_ids CONTAINS %s"
+result = session.execute(query, [genre_id])
   ```
 
  ```bash
-
+min_rating = 7.0
+max_rating = 10.0
+query = "SELECT * FROM movie_data WHERE vote_average >= %s AND vote_average <= %s ALLOW FILTERING"
+result = session.execute(query, (min_rating, max_rating))
   ```
 
  ```bash
-
+query = "SELECT * FROM movie_data WHERE release_date >= '2020-01-01' AND release_date <= '2022-12-31' ALLOW FILTERING"
+result = session.execute(query)
   ```
 
 Queries en Neo4j 
