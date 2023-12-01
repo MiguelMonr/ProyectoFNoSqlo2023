@@ -6,12 +6,6 @@ import pandas as pd
 api_key = 'c8143bf74c1d797a6756f96808315a09'
 
 
-#Conexión a la base de datos
-#client = pymongo.MongoClient("mongodb://mongo_lake:27017")
-#db = client["pelicuas"]
-#casa = db["drinks"]
-#mongo = db["IMDB_m"]
-
 # Lista para almacenar los datos de cada películasp
 movie_data_list = []
 
