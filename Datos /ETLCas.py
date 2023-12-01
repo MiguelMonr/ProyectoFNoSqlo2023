@@ -12,10 +12,6 @@ movie_data_list = []
 # Lista de claves IMDb (deberás reemplazar esto con la lista obtenida de tu archivo CSV)
 keys = list(pd.read_csv("imdb_keys.csv")["keys"])
 
-'''client = pymongo.MongoClient("mongodb://mongo_lake:27017")
-db = client["cocktails"]
-casa = db["drinks"]
-mongo = db["IMDB_m"]''' 
 
 # Bucle para recorrer cada clave y realizar la solicitud a la API
 for i in range(200):
